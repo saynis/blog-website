@@ -5,7 +5,7 @@ const app = express()
 app.use(express.json())
 
 const corsOption = {
-    origin: "http://localhost:5173",
+    origin: "https://iftinlibarrary.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
