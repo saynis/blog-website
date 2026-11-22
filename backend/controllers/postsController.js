@@ -10,9 +10,9 @@ export const createPosts = async(req,res)=>{
     try {
 
         const id = req.user.id
-        const {title, content, image, authorId} = req.body
+        const {title, content, image} = req.body
 
-    if(!title || !content || !authorId){
+    if(!title || !content){
         return res.status(400).json({
             message: "please fill all feilds"
         })
